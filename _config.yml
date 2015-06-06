@@ -1,0 +1,16 @@
+# Site settings
+title: Julien Fabre
+email: ju <dot> pryz <at> gmail <dot> com
+description: > # this means to ignore newlines until "baseurl:"
+  Technical blog of a French tech working as Site Reliability Engineer in California.<br />
+  Enjoy coding/hacking/building things, passionate about cycling, always enjoy a good beer.
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "https://pryz.github.io" # the base hostname & protocol for your site
+twitter_username: julien_fabre
+github_username:  pryz
+linkedin_username:  julienfabre
+
+# Build settings
+markdown: kramdown
+
+comments: true
