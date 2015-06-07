@@ -82,7 +82,7 @@ node default {
 
 Now if you create an instance with the tag ```role``` or just changing this tag of a specific instance like that : 
 
-{% highlight shell %}
+{% highlight bash %}
 aws ec2 create-tags --resources id-1234567 --tags Key=role,Value=webserver
 {% endhighlight %}
 
