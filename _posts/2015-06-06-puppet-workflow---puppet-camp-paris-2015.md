@@ -25,7 +25,7 @@ Be more developers than ops :)
 
 We love Gerrit. We deeply think that Gerrit is one of the best Code Review solution currently available. Why ?
 
-* The Steam-event service give you a powerful way to plug your Git activity with your CI solution,
+* The Stream-event service give you a powerful way to plug your Git activity with your CI solution,
 * Review commit by commit can be really usefull to master infrastructure configuration and force atomic changes,
 * The UI is great. Ok it's not looking that great but it's powerfull and give you all the keys to manage your changes
 
@@ -94,7 +94,7 @@ Thanks to this approach you are not relying on hostname anymore and your code is
 
 We recently decided to release some of our modules to the Puppet Forge. We are trying to use more and more the Puppet community modules and we think that we have to participate in return. So far we have released only one module. Others will come soon. These modules are compatible with Puppet 2.7.x and 3.7.x. We are not using Puppet 4.x yet.
 
-We use the really good skeleton from Gareth Rushgrove (garethr) available on Github : [https://github.com/garethr/puppet-module-skeleton](https://github.com/garethr/puppet-module-skeleton). This skeletong give you a really good scaffolding to start writing a new module.
+We use the really good skeleton from Gareth Rushgrove (garethr) available on Github : [https://github.com/garethr/puppet-module-skeleton](https://github.com/garethr/puppet-module-skeleton). This skeleton give you a really good scaffolding to start writing a new module.
 
 You can follow our releases here : [https://forge.puppetlabs.com/TubeMogul](https://forge.puppetlabs.com/TubeMogul).
 
