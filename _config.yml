@@ -14,4 +14,4 @@ linkedin_username:  julienfabre
 markdown: kramdown
 
 comments: true
-highlighter: rouge
+#highlighter: rouge
