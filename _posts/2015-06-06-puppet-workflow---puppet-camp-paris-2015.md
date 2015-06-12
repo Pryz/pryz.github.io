@@ -17,7 +17,7 @@ I will write two posts on this topic. The first one will give some details on th
 At TubeMogul, we manage a relative complex infrastructure. We have a philosophy of "moving fast" which involve implementing a large numbers of technologies.
 That's the main reason why after multiple years using Puppet we have more than 2000 Puppet agents running every hour, 225 different kind of nodes and more 120 Puppet modules.
 
-Manage this kind of platform can be tricky when you have only few Ops to take care of it. Right now our team is represented by 13 Ops (9 SREs and 4 SA) working on two differents timezone. That's why we want to be able to change and deploy configuration as fast as possible in the most efficiently possible way.
+Manage this kind of platform can be tricky when you have only few Ops to take care of it. Right now our team is represented by 13 Ops (9 SREs and 4 SA) working on two differents timezone. That's why we want to be able to change and deploy configuration as fast as possible in the most efficient possible way.
 
 Be more developers than ops :)
 
@@ -30,7 +30,7 @@ We love Gerrit. We deeply think that Gerrit is one of the best Code Review solut
 * The UI is great. Ok it's not looking that great but it's powerfull and give you all the keys to manage your changes
 
 If you are interested about Gerrit, you should take a look at the [Gerrit Trigger](https://wiki.jenkins-ci.org/display/JENKINS/Gerrit+Trigger) plugin for Jenkins.
-With this plugin, Jenkins will just read all the events through the [Gerrit Strem event](https://gerrit-documentation.googlecode.com/svn/Documentation/2.7/cmd-stream-events.html) and will be able to trigger a build for each change.
+With this plugin, Jenkins will just read all the events through the [Gerrit Stream event](https://gerrit-documentation.googlecode.com/svn/Documentation/2.7/cmd-stream-events.html) and will be able to trigger a build for each change.
 
 In order to programatically create our Jenkins jobs, we use the [Jenkins Job DSL plugin](https://github.com/jenkinsci/job-dsl-plugin). You will have to write some Groovy lines but you will basically able to reproduce all the jobs you want. See the [wiki](https://github.com/jenkinsci/job-dsl-plugin/wiki/Job-DSL-Commands) for more information.
 
@@ -53,11 +53,11 @@ configure { project ->
 
 ## Keep Puppet efficient and simple
 
-The biggest challenge you have when you implement Puppet within a complex infrastructure is to keep it simple and efficient. When you start working with Puppet, you write some manifests and then some modules to factorize your code. And then you discover Hiera and start to store all your variables at the same place. You think you have the best implementation of Puppet ever and keep going. Few years later you have more than 200 Puppet manifests and more than 100 modules. Having that many modules is not the problem but maintening that many manifests is a pain. You probably have code duplication everywhere and overly use code inheritance.
+The biggest challenge you have when you implement Puppet within a complex infrastructure is to keep it simple and efficient. When you start working with Puppet, you write some manifests and then some modules to factorize your code. And then you discover Hiera and start to store all your variables at the same place. You think you have the best implementation of Puppet ever and keep going. Few years later you have more than 200 Puppet manifests and more than 100 modules. Having that many modules is not the problem but maintaining that many manifests is a pain. You probably have code duplication everywhere and overly use code inheritance.
 
-Because you are using manifests (\*.pp files) you are probably relying on hostnames. Which is a design issue for all the cloud infrastructures and a big lack a flexibilty.
+Because you are using manifests (\*.pp files) you are probably relying on hostnames. Which is a design issue for all the cloud infrastructures and a big lack of flexibilty.
 
-We got these issues and decided to fix them with two framework : Role and Profiles to organize better our codebase, Nodeless to stop relying on hostname.
+We got these issues and decided to fix them with two frameworks : Role and Profiles to organize better our codebase, Nodeless to stop relying on hostname.
 
 ### Role and Profiles
 
@@ -80,7 +80,7 @@ node default {
 }
 {% endhighlight %}
 
-Now if you create an instance with the tag ```role``` or just changing this tag of a specific instance like that : 
+Now if you create an instance with the tag ```role``` or just change this tag of a specific instance like that : 
 
 {% highlight bash %}
 aws ec2 create-tags --resources id-1234567 --tags Key=role,Value=webserver
@@ -94,7 +94,7 @@ Thanks to this approach you are not relying on hostname anymore and your code is
 
 We recently decided to release some of our modules to the Puppet Forge. We are trying to use more and more the Puppet community modules and we think that we have to participate in return. So far we have released only one module. Others will come soon. These modules are compatible with Puppet 2.7.x and 3.7.x. We are not using Puppet 4.x yet.
 
-We use the really good skeleton from Gareth Rushgrove (garethr) available on Github : [https://github.com/garethr/puppet-module-skeleton](https://github.com/garethr/puppet-module-skeleton). This skeleton give you a really good scaffolding to start writing a new module.
+We use the really good skeleton from Gareth Rushgrove (garethr) available on Github : [https://github.com/garethr/puppet-module-skeleton](https://github.com/garethr/puppet-module-skeleton). This skeleton gives you a really good scaffolding to start writing a new module.
 
 You can follow our releases here : [https://forge.puppetlabs.com/TubeMogul](https://forge.puppetlabs.com/TubeMogul).
 
