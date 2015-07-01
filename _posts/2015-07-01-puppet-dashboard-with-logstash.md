@@ -29,6 +29,6 @@ We can probably improve this dashboard. Let me know if you have any idea :)
 
 ## Resources
 
-* Documentation : [Puppet Reporting](https://docs.puppetlabs.com/guides/reporting.html), you will n
+* Documentation : [Puppet Reporting](https://docs.puppetlabs.com/guides/reporting.html)
 * Puppet Module : [puppet-logstash-reporter](https://github.com/elastic/puppet-logstash-reporter)
 * Kibana dashboard : [puppet_reports.json](https://gist.github.com/Pryz/aa6f78fa4c09e5356208)
