@@ -20,7 +20,7 @@ master, setup logstash.yaml and change your puppet.conf.
 ## Kibana dashboard example
 
 This is an example of what you can have with these reports in Logstash :
-![Kibana 3 Puppet Reports](/assets/screenshot.jpg)
+![Kibana 3 Puppet Reports](https://raw.githubusercontent.com/Pryz/blog-resources/master/images/reports_screenshot.png)
 
 You can find the source of this dashboard here : [https://gist.github.com/Pryz/aa6f78fa4c09e5356208](https://gist.github.com/Pryz/aa6f78fa4c09e5356208). This json configuration is for Kibana 3. I need to think about doing to same for Kibana 4 :)
 For this dashboard I'm using a fork of the puppet-logstash-reporter module to have a better management of Puppet 2.x. See : [https://github.com/Pryz/puppet-logstash-reporter](https://github.com/Pryz/puppet-logstash-reporter).
