@@ -11,7 +11,7 @@ you want to keep your configuration management platform as simple as possible an
 
 ## Send Puppet Reports to Logstash
 
-Another solution is to leverage Logstash. If you already have a Logstash platform, sending Puppet Reports to Logstash is really straigthforward. You just need to use a module which going to
+Another solution is to leverage Logstash. If you already have a Logstash platform, sending Puppet Reports to Logstash is really straightforward. You just need to use a module which going to
 implement Puppet::Reports.register_report. This resource will have to parse a Puppet report and send JSON to Logstash.
 
 Folks from Elastic already did all the work for us :) See : https://github.com/elastic/puppet-logstash-reporter. Just follow the doc to implement it. Basically you will need to use the module on your
