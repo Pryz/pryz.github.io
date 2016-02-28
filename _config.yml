@@ -19,3 +19,4 @@ paginate: 5
 sass:
   compressed: true
 comments: true
+exclude: [vendor]
