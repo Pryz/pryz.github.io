@@ -6,14 +6,16 @@
 
 
 // Our variables
-$base-font-family: Helvetica, Arial, sans-serif;
-$base-font-size:   16px;
+//$base-font-family: Helvetica, Arial, sans-serif;
+$base-font-family: Georgia,Cambria,"Times New Roman",Times,serif;
+$base-font-size:   19px;
 $small-font-size:  $base-font-size * 0.875;
 $base-line-height: 1.5;
 
 $spacing-unit:     30px;
 
-$text-color:       #111;
+//$text-color:       #111;
+$text-color:       #464646;
 $background-color: #fdfdfd;
 $brand-color:      #2a7ae2;
 
@@ -48,5 +50,6 @@ $on-laptop:        800px;
 @import
         "base",
         "layout",
-        "syntax-highlighting"
+        //"syntax-highlighting"
+        "_syntax-monokai"
 ;

@@ -1,0 +1,175 @@
+//colors
+$color_pewter_approx: #93a1a1;
+$color_daintree_approx: #002b36;
+$color_bunker_approx: #151515;
+$color_apple_blossom_approx: #ac4142;
+$color_fuscous_gray_approx: #505050;
+$color_rob_roy_approx: #f4bf75;
+$color_celeste_approx: #d0d0d0;
+$color_chelsea_cucumber_approx: #90a959;
+$color_hippie_blue_approx: #6a9fb5;
+$color_bouquet_approx: #aa759f;
+$color_raw_sienna_approx: #d28445;
+$color_gulf_stream_approx: #75b5aa;
+$color_potters_clay_approx: #8f5536;
+
+.highlight {
+  color: $color_pewter_approx;
+  background-color: $color_daintree_approx;
+  table {
+    td {
+      padding: 5px;
+    }
+    pre {
+      margin: 0;
+    }
+  }
+  .w {
+    color: $color_pewter_approx;
+    background-color: $color_daintree_approx;
+  }
+  .err {
+    color: $color_bunker_approx;
+    background-color: $color_apple_blossom_approx;
+  }
+  .c {
+    color: $color_fuscous_gray_approx;
+  }
+  .cd {
+    color: $color_fuscous_gray_approx;
+  }
+  .cm {
+    color: $color_fuscous_gray_approx;
+  }
+  .c1 {
+    color: $color_fuscous_gray_approx;
+  }
+  .cs {
+    color: $color_fuscous_gray_approx;
+  }
+  .cp {
+    color: $color_rob_roy_approx;
+  }
+  .nt {
+    color: $color_rob_roy_approx;
+  }
+  .o {
+    color: $color_celeste_approx;
+  }
+  .ow {
+    color: $color_celeste_approx;
+  }
+  .p {
+    color: $color_celeste_approx;
+  }
+  .pi {
+    color: $color_celeste_approx;
+  }
+  .gi {
+    color: $color_chelsea_cucumber_approx;
+  }
+  .gd {
+    color: $color_apple_blossom_approx;
+  }
+  .gh {
+    color: $color_hippie_blue_approx;
+    background-color: $color_bunker_approx;
+    font-weight: bold;
+  }
+  .k {
+    color: $color_bouquet_approx;
+  }
+  .kn {
+    color: $color_bouquet_approx;
+  }
+  .kp {
+    color: $color_bouquet_approx;
+  }
+  .kr {
+    color: $color_bouquet_approx;
+  }
+  .kv {
+    color: $color_bouquet_approx;
+  }
+  .kc {
+    color: $color_raw_sienna_approx;
+  }
+  .kt {
+    color: $color_raw_sienna_approx;
+  }
+  .kd {
+    color: $color_raw_sienna_approx;
+  }
+  .s {
+    color: $color_chelsea_cucumber_approx;
+  }
+  .sb {
+    color: $color_chelsea_cucumber_approx;
+  }
+  .sc {
+    color: $color_chelsea_cucumber_approx;
+  }
+  .sd {
+    color: $color_chelsea_cucumber_approx;
+  }
+  .s2 {
+    color: $color_chelsea_cucumber_approx;
+  }
+  .sh {
+    color: $color_chelsea_cucumber_approx;
+  }
+  .sx {
+    color: $color_chelsea_cucumber_approx;
+  }
+  .s1 {
+    color: $color_chelsea_cucumber_approx;
+  }
+  .sr {
+    color: $color_gulf_stream_approx;
+  }
+  .si {
+    color: $color_potters_clay_approx;
+  }
+  .se {
+    color: $color_potters_clay_approx;
+  }
+  .nn {
+    color: $color_rob_roy_approx;
+  }
+  .nc {
+    color: $color_rob_roy_approx;
+  }
+  .no {
+    color: $color_rob_roy_approx;
+  }
+  .na {
+    color: $color_hippie_blue_approx;
+  }
+  .m {
+    color: $color_chelsea_cucumber_approx;
+  }
+  .mf {
+    color: $color_chelsea_cucumber_approx;
+  }
+  .mh {
+    color: $color_chelsea_cucumber_approx;
+  }
+  .mi {
+    color: $color_chelsea_cucumber_approx;
+  }
+  .il {
+    color: $color_chelsea_cucumber_approx;
+  }
+  .mo {
+    color: $color_chelsea_cucumber_approx;
+  }
+  .mb {
+    color: $color_chelsea_cucumber_approx;
+  }
+  .mx {
+    color: $color_chelsea_cucumber_approx;
+  }
+  .ss {
+    color: $color_chelsea_cucumber_approx;
+  }
+}

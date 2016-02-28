@@ -8,7 +8,7 @@ tags: ['aws', 'ruby', 'sensu']
 
 I got recently the need to access resources from mulitple AWS accounts. For example, let's say that you have a monitoring service (i.e Sensu) and you want to monitor AWS resources (EC2 instances, RDS databases, ...) which are in mulitple AWS account (account per services or per environment as dev and production).
 
-You basicaly have two solutions here. The first one is to create an user for your monitoring service in each account and play with what AWS calls "[SharedCredentials](http://docs.aws.amazon.com/sdkforruby/api/Aws/SharedCredentials.html)". You will put all your credentials in a file like `~/.aws/credetials` and define which profile you want to use in your script or try to look into all your accounts to try to find the resource you want. This solution will work but here it means that you will have to maintain mulitple user accounts and so mulitple set of AWS credentials.
+You basicaly have two solutions here. The first one is to create an user for your monitoring service in each account and play with what AWS calls "[SharedCredentials](http://docs.aws.amazon.com/sdkforruby/api/Aws/SharedCredentials.html)". You will put all your credentials in a file like `~/.aws/credetials` and define which profile you want to use in your script or try to look into all your accounts to try to find the resource you want. This solution will work but it means that you will have to maintain mulitple user accounts and so mulitple set of AWS credentials.
 
 Having to maintain mulitple set of credentials for only one script can be painful. To fix that, you can use the second solution : IAM roles.
 
@@ -63,4 +63,4 @@ ec2 = Aws::EC2::Client.new(credentials: role_credentials)
 puts ec2.describe_instances()
 {% endhighlight %}
 
-You can see a real life example here : https://github.com/Pryz/sensu/blob/master/awsdecomm.rb, a Sensu handler to clean out old Sensu clients from AWS instance which have been decommissioned.
+You can see a real life example here : [https://github.com/Pryz/sensu/blob/master/awsdecomm.rb](https://github.com/Pryz/sensu/blob/master/awsdecomm.rb), a Sensu handler to clean out old Sensu clients from AWS instance which have been decommissioned.
