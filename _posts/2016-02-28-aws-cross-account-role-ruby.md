@@ -15,9 +15,9 @@ Having to maintain mulitple set of credentials for only one script can be painfu
 As define in this walkthrough from the AWS documentation : [Delegating Access Across AWS Accounts For Accounts You Own Using IAM Roles](http://docs.aws.amazon.com/IAM/latest/UserGuide/walkthru_cross-account-with-roles.html
 http://docs.aws.amazon.com/IAM/latest/UserGuide/walkthru_cross-account-with-roles.html), create a cross account IAM Role is pretty easy.
 
-Once you have your role here is an example about how to use it with the Ruby [AWS SDK](http://docs.aws.amazon.com/sdkforruby/api/index.html) :
+Once you have your role here is an example to use it with the Ruby [AWS SDK](http://docs.aws.amazon.com/sdkforruby/api/index.html) :
 
-```ruby
+{% highlight ruby %}
 require 'aws-sdk'
 
 # The credentials of the user in your 'main' AWS account
@@ -61,6 +61,6 @@ end
 # Then created the EC2 client and play with it
 ec2 = Aws::EC2::Client.new(credentials: role_credentials)
 puts ec2.describe_instances()
-```
+{% endhighlight %}
 
 You can see a real life example here : https://github.com/Pryz/sensu/blob/master/awsdecomm.rb, a Sensu handler to clean out old Sensu clients from AWS instance which have been decommissioned.
