@@ -14,7 +14,6 @@ linkedin_username:  julienfabre
 markdown: kramdown
 highlighter: rouge
 permalink: pretty
-relative_permalinks: true
 paginate: 5
 sass:
   compressed: true
