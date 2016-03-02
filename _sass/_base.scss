@@ -20,6 +20,7 @@ body {
     font-weight: 300;
     color: $text-color;
     -webkit-text-size-adjust: 100%;
+    -webkit-font-smoothing: antialiased;
 }
 
 
